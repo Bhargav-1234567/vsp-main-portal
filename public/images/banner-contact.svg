@@ -73,7 +73,7 @@
     <circle cx="80" cy="135" r="15" fill="#27AE60"/>
     <path d="M 75 130 Q 75 128 77 128 L 83 128 Q 85 128 85 130 L 85 135 Q 85 140 80 140 Q 75 140 75 135 Z" fill="#FFFFFF"/>
     <text x="80" y="165" text-anchor="middle" font-family="Arial" font-size="8" fill="#FFFFFF" font-weight="bold">Call Now</text>
-    <text x="80" y="175" text-anchor="middle" font-family="Arial" font-size="6" fill="#FFFFFF">+1 (555) 123-4567</text>
+    <text x="80" y="175" text-anchor="middle" font-family="Arial" font-size="6" fill="#FFFFFF">90990 08938 - 97254 30242</text>
     
     <!-- Tablet -->
     <rect x="350" y="80" width="100" height="140" fill="#34495E" rx="10"/>

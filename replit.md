@@ -1,8 +1,8 @@
-# Visa Express Consultants Website
+# VSP Visa Consultant Consultants Website
 
 ## Overview
 
-This is a static website for Visa Express Consultants, an immigration consultation service. The website is built using HTML, CSS, and JavaScript with Bootstrap 5 framework for responsive design. It provides information about the company's immigration services, team, and allows potential clients to learn about various visa options and contact the consultants.
+This is a static website for VSP Visa Consultant Consultants, an immigration consultation service. The website is built using HTML, CSS, and JavaScript with Bootstrap 5 framework for responsive design. It provides information about the company's immigration services, team, and allows potential clients to learn about various visa options and contact the consultants.
 
 ## User Preferences
 

@@ -80,7 +80,7 @@
   
   <!-- Highlighted Office Floor (Our Company) -->
   <rect x="420" y="260" width="165" height="30" fill="#F39C12" opacity="0.8"/>
-  <text x="502" y="280" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">VISA EXPRESS</text>
+  <text x="502" y="280" text-anchor="middle" font-family="Arial" font-size="12" fill="white" font-weight="bold">VSP Visa Consultant</text>
   
   <!-- Side Buildings -->
   <rect x="250" y="200" width="120" height="300" fill="url(#buildingGradient)"/>
@@ -97,7 +97,7 @@
   <!-- Corporate Logo/Sign -->
   <rect x="450" y="130" width="100" height="40" fill="white" opacity="0.9" rx="5"/>
   <circle cx="470" cy="150" r="12" fill="#0052CC"/>
-  <text x="490" y="155" font-family="Arial" font-size="14" fill="#0052CC" font-weight="bold">VISA EXPRESS</text>
+  <text x="490" y="155" font-family="Arial" font-size="14" fill="#0052CC" font-weight="bold">VSP Visa Consultant</text>
   
   <!-- Professional Icons -->
   <!-- Scale of Justice -->
