@@ -128,8 +128,8 @@ const Company = () => {
                 <p className="lead">{siteData?.ourStory?.subTitle}</p>
                 <p>{siteData?.storyPara}</p>
               </div>
-              <div className="col-lg-6 story-item">
-                <div className="timeline">
+              <div className="col-lg-6 overflow-hidden">
+                <div className="timeline story-item">
                   {companyHistory?.map((item) => {
                     return (
                       <div key={item?.title} className="timeline-item">

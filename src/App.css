@@ -1384,7 +1384,7 @@ footer .list-unstyled a:hover {
     position: fixed;
     background: white;
     width: 50%;
-    right: 12%;
+    right: 0;
     top: 0;
     height: 100%;
     .navbar-nav {

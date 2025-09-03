@@ -162,7 +162,7 @@ const Home = () => {
               </div>
 
               <div className="col-lg-6">
-                <div className="stats-grid">
+                <div className="stats-grid overflow-hidden">
                   {numerics?.map((item) => {
                     return (
                       <div key={item.label} className="stat-item">
