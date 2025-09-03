@@ -2,28 +2,27 @@
     "home": {
         "sliderItems": [
             {
-                "mainTitle": "France",
-                "subTitle": "France",
-                "description": "The City of Light beckons with its timeless elegance, world-renowned museums, and romantic boulevards. Experience the perfect blend of history, culture, and sophistication in the heart of France.",
-                "image": "sdfg",
+                "mainTitle": "Family Tour",
+                "subTitle": "Unforgettable holidays with your loved ones",
+                "description": "Plan stress-free vacations with our expert visa and travel assistance. From documentation to bookings, we make sure your family tour is smooth, memorable, and hassle-free.",
                 "link": "#"
             },
             {
-                "mainTitle": "Italy",
-                "subTitle": "Tuscany",
-                "description": "Rolling hills dotted with cypress trees, medieval towns, and world-class vineyards create the perfect backdrop for an unforgettable Italian escape. Discover the art of slow living in this enchanting region.",
+                "mainTitle": "Business",
+                "subTitle": "Expand your opportunities worldwide",
+                "description": "We help entrepreneurs, professionals, and corporations secure business visas quickly and efficiently. Travel abroad to attend meetings, conferences, or explore new partnerships with complete peace of mind.",
                 "link": "#"
             },
             {
-                "mainTitle": "Japan",
-                "subTitle": "Kyoto",
-                "description": "Ancient temples, traditional gardens, and preserved districts offer a glimpse into Japan's rich cultural heritage. Walk through bamboo groves and witness the beauty of changing seasons in this spiritual sanctuary.",
+                "mainTitle": "Family Immigration",
+                "subTitle": "Reunite with your family abroad",
+                "description": "Our dedicated team assists with family immigration visas so you can live, work, and thrive together overseas. From spouse visas to dependent applications, we simplify the process for you.",
                 "link": "#"
             },
             {
-                "mainTitle": "Greece",
-                "subTitle": "Santorini",
-                "description": "Whitewashed villages perched on volcanic cliffs overlook the deep blue Aegean Sea. Experience breathtaking sunsets, ancient history, and the warm hospitality of the Greek islands.",
+                "mainTitle": "Abroad Education",
+                "subTitle": "Shape your future with global education",
+                "description": "We provide end-to-end guidance for student visas, admissions, and documentation. Get expert advice on the best universities, courses, and visa approvals to kickstart your international career.",
                 "link": "#"
             }
         ],

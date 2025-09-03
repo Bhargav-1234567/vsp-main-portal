@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 const apiBase = process.env.REACT_APP_API_URL;
 
@@ -49,9 +50,9 @@ const HomeSlider = () => {
                 <div className="slide-location">{slide.mainTitle}</div>
                 <h1 className="slide-title">{slide.subTitle}</h1>
                 <p className="slide-description">{slide.description}</p>
-                <a href="#" className="slide-button">
+                <Link to={"/services"} className="slide-button">
                   Explore More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

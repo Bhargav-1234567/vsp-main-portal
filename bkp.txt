@@ -1,454 +1,453 @@
 {
-  "home": {
-    "sliderItems": [
-      {
-        "mainTitle": "France",
-        "subTitle": "France",
-        "description": "The City of Light beckons with its timeless elegance, world-renowned museums, and romantic boulevards. Experience the perfect blend of history, culture, and sophistication in the heart of France.",
-        "image": "sdfg",
-        "link": "#"
-      },
-      {
-        "mainTitle": "Italy",
-        "subTitle": "Tuscany",
-        "description": "Rolling hills dotted with cypress trees, medieval towns, and world-class vineyards create the perfect backdrop for an unforgettable Italian escape. Discover the art of slow living in this enchanting region.",
-        "link": "#"
-      },
-      {
-        "mainTitle": "Japan",
-        "subTitle": "Kyoto",
-        "description": "Ancient temples, traditional gardens, and preserved districts offer a glimpse into Japan's rich cultural heritage. Walk through bamboo groves and witness the beauty of changing seasons in this spiritual sanctuary.",
-        "link": "#"
-      },
-      {
-        "mainTitle": "Greece",
-        "subTitle": "Santorini",
-        "description": "Whitewashed villages perched on volcanic cliffs overlook the deep blue Aegean Sea. Experience breathtaking sunsets, ancient history, and the warm hospitality of the Greek islands.",
-        "link": "#"
-      }
-    ],
-    "expertise": {
-      "subTitle": "Comprehensive immigration and visa services tailored to your unique needs",
-      "items": [
-        {
-          "title": "Immigration",
-          "description": "Permanent residence, family sponsorship, and express entry programs",
-          "icon": "alarm-clock-plus"
+    "home": {
+        "sliderItems": [
+            {
+                "mainTitle": "Family Tour",
+                "subTitle": "Unforgettable holidays with your loved ones",
+                "description": "Plan stress-free vacations with our expert visa and travel assistance. From documentation to bookings, we make sure your family tour is smooth, memorable, and hassle-free.",
+                "link": "#"
+            },
+            {
+                "mainTitle": "Business",
+                "subTitle": "Expand your opportunities worldwide",
+                "description": "We help entrepreneurs, professionals, and corporations secure business visas quickly and efficiently. Travel abroad to attend meetings, conferences, or explore new partnerships with complete peace of mind.",
+                "link": "#"
+            },
+            {
+                "mainTitle": "Family Immigration",
+                "subTitle": "Reunite with your family abroad",
+                "description": "Our dedicated team assists with family immigration visas so you can live, work, and thrive together overseas. From spouse visas to dependent applications, we simplify the process for you.",
+                "link": "#"
+            },
+            {
+                "mainTitle": "Abroad Education",
+                "subTitle": "Shape your future with global education",
+                "description": "We provide end-to-end guidance for student visas, admissions, and documentation. Get expert advice on the best universities, courses, and visa approvals to kickstart your international career.",
+                "link": "#"
+            }
+        ],
+        "expertise": {
+            "subTitle": "Comprehensive immigration and visa services tailored to your unique needs",
+            "items": [
+                {
+                    "title": "Immigration",
+                    "description": "Permanent residence, family sponsorship, and express entry programs",
+                    "icon": "alarm-clock-plus"
+                },
+                {
+                    "title": "Study Abroad",
+                    "description": "Student visa applications and university admission guidance",
+                    "icon": "graduation-cap"
+                },
+                {
+                    "title": "Work Permits",
+                    "description": "Temporary work permits, LMIA, and intra-company transfers",
+                    "icon": "briefcase-business"
+                },
+                {
+                    "title": "Visitor Visa",
+                    "description": "Tourist visa applications and travel documentation",
+                    "icon": "plane"
+                }
+            ]
         },
-        {
-          "title": "Study Abroad",
-          "description": "Student visa applications and university admission guidance",
-          "icon": "graduation-cap"
-        },
-        {
-          "title": "Work Permits",
-          "description": "Temporary work permits, LMIA, and intra-company transfers",
-          "icon": "briefcase-business"
-        },
-        {
-          "title": "Visitor Visa",
-          "description": "Tourist visa applications and travel documentation",
-          "icon": "plane"
-        }
-      ]
+        "whyChoose": [
+            {
+                "title": "Experienced Professionals",
+                "description": "Over 15 years of immigration law expertise"
+            },
+            {
+                "title": "High Success Rate",
+                "description": "98% application approval rate across all visa categories"
+            },
+            {
+                "title": "Personalized Service",
+                "description": "Tailored solutions for your unique immigration needs"
+            },
+            {
+                "title": "24/7 Support",
+                "description": "Round-the-clock assistance throughout your journey"
+            }
+        ],
+        "numerics": [
+            {
+                "label": "Happy Clients",
+                "count": 5000,
+                "status": "+"
+            },
+            {
+                "label": "Success Rate",
+                "count": 98,
+                "status": "%"
+            },
+            {
+                "label": "Years Experience",
+                "count": 15,
+                "status": "+"
+            },
+            {
+                "label": "Countries Served",
+                "count": 50,
+                "status": "+"
+            }
+        ],
+        "iconPick": "alarm-plus"
     },
-    "whyChoose": [
-      {
-        "title": "Experienced Professionals",
-        "description": "Over 15 years of immigration law expertise"
-      },
-      {
-        "title": "High Success Rate",
-        "description": "98% application approval rate across all visa categories"
-      },
-      {
-        "title": "Personalized Service",
-        "description": "Tailored solutions for your unique immigration needs"
-      },
-      {
-        "title": "24/7 Support",
-        "description": "Round-the-clock assistance throughout your journey"
-      }
-    ],
-    "numerics": [
-      {
-        "label": "Happy Clients",
-        "count": 5000,
-        "status": "+"
-      },
-      {
-        "label": "Success Rate",
-        "count": 98,
-        "status": "%"
-      },
-      {
-        "label": "Years Experience",
-        "count": 15,
-        "status": "+"
-      },
-      {
-        "label": "Countries Served",
-        "count": 50,
-        "status": "+"
-      }
-    ],
-    "iconPick": "alarm-plus"
-  },
-  "company": {
-    "mainTitle": "About VSP Visa Consultant",
-    "subTitle": "Dedicated to excellence in immigration services since 2008",
-    "storyPara": "What started as a small consulting firm has grown into one of the most trusted immigration service providers, helping thousands of individuals and families achieve their dreams of living, working, and studying abroad.\n\nOur founder, Maria Rodriguez, immigrated to Canada herself and understood firsthand the challenges faced by newcomers. This personal experience drives our commitment to providing compassionate, expert guidance at every step of the immigration journey.",
-    "ourStory": {
-      "mainTitle": "Our Story",
-      "subTitle": "Founded in 2008, VSP Visa Consultant Consultants began with a simple mission: to make immigration accessible, transparent, and successful for everyone."
+    "company": {
+        "mainTitle": "About VSP Visa Consultant",
+        "subTitle": "Dedicated to excellence in immigration services since 2008",
+        "storyPara": "What started as a small consulting firm has grown into one of the most trusted immigration service providers, helping thousands of individuals and families achieve their dreams of living, working, and studying abroad.\n\nOur founder, Maria Rodriguez, immigrated to Canada herself and understood firsthand the challenges faced by newcomers. This personal experience drives our commitment to providing compassionate, expert guidance at every step of the immigration journey.",
+        "ourStory": {
+            "mainTitle": "Our Story",
+            "subTitle": "Founded in 2008, VSP Visa Consultant Consultants began with a simple mission: to make immigration accessible, transparent, and successful for everyone."
+        },
+        "companyHistory": [
+            {
+                "year": "2008",
+                "title": "Company Founded",
+                "description": "Started with a vision to simplify immigration"
+            },
+            {
+                "year": "2012",
+                "title": "1000+ Successful Cases",
+                "description": "Reached our first major milestone"
+            },
+            {
+                "year": "2018",
+                "title": "International Recognition",
+                "description": "Awarded Best Immigration Consultant"
+            },
+            {
+                "year": "2025",
+                "title": "5000+ Happy Clients",
+                "description": "Continuing to grow and serve"
+            }
+        ],
+        "coreValues": [
+            {
+                "title": "Integrity",
+                "description": "We maintain the highest ethical standards in all our interactions and never compromise on honesty and transparency.",
+                "icon": "shield-half"
+            },
+            {
+                "title": "Excellence",
+                "description": "We strive for perfection in every application, staying updated with the latest immigration laws and procedures.",
+                "icon": "graduation-cap"
+            },
+            {
+                "title": "Diversity",
+                "description": "We celebrate cultural diversity and believe in creating inclusive opportunities for people from all backgrounds.\n",
+                "icon": "users"
+            },
+            {
+                "title": "Compassion",
+                "description": "We understand the emotional journey of immigration and provide supportive, caring guidance throughout the process.",
+                "icon": "heart"
+            },
+            {
+                "title": "Innovation",
+                "description": "We continuously improve our services and adopt new technologies to enhance the client experience.",
+                "icon": "lightbulb"
+            },
+            {
+                "title": "Partnership",
+                "description": "We build long-term relationships with our clients, supporting them beyond their initial immigration goals.",
+                "icon": "handshake"
+            }
+        ],
+        "expertTeam": [
+            {
+                "name": "Maria Rodriguez",
+                "position": "Founder & CEO",
+                "description": "Regulated Canadian Immigration Consultant (RCIC) with over 15 years of experience. Specializes in Express Entry and Provincial Nominee Programs.",
+                "labels": [
+                    {
+                        "color": "#dd1d1d",
+                        "label": "RCCIC Member"
+                    }
+                ]
+            },
+            {
+                "name": "David Chen",
+                "position": "Senior Immigration Consultant",
+                "description": "Expert in student visa applications and study permit renewals. Holds advanced certifications in education consulting and immigration law.",
+                "labels": [
+                    {
+                        "color": "#dd1d1d",
+                        "label": "Extension Specialist"
+                    }
+                ]
+            },
+            {
+                "name": "Sarah Johnson",
+                "position": "Work Permit Specialist",
+                "description": "Focuses on LMM applications, work permits, and employer compliance. Former government immigration officer with insider knowledge.",
+                "labels": [
+                    {
+                        "color": "#dd1d1d",
+                        "label": "Cx Government"
+                    }
+                ]
+            }
+        ],
+        "awards": [
+            {
+                "title": "Best Immigration Consultant",
+                "description": "2023 - Immigration Excellence Awards"
+            },
+            {
+                "title": "Client Choice Award",
+                "description": "2022 - National Business Awards"
+            },
+            {
+                "title": "Outstanding Service",
+                "description": "2021 - Professional Services Council"
+            },
+            {
+                "title": "Certified Excellence",
+                "description": "2020 - Immigration Consultants Association"
+            }
+        ]
     },
-    "companyHistory": [
-      {
-        "year": "2008",
-        "title": "Company Founded",
-        "description": "Started with a vision to simplify immigration"
-      },
-      {
-        "year": "2012",
-        "title": "1000+ Successful Cases",
-        "description": "Reached our first major milestone"
-      },
-      {
-        "year": "2018",
-        "title": "International Recognition",
-        "description": "Awarded Best Immigration Consultant"
-      },
-      {
-        "year": "2025",
-        "title": "5000+ Happy Clients",
-        "description": "Continuing to grow and serve"
-      }
-    ],
-    "coreValues": [
-      {
-        "title": "Integrity",
-        "description": "We maintain the highest ethical standards in all our interactions and never compromise on honesty and transparency.",
-        "icon": "shield-half"
-      },
-      {
-        "title": "Excellence",
-        "description": "We strive for perfection in every application, staying updated with the latest immigration laws and procedures.",
-        "icon": "graduation-cap"
-      },
-      {
-        "title": "Diversity",
-        "description": "We celebrate cultural diversity and believe in creating inclusive opportunities for people from all backgrounds.\n",
-        "icon": "users"
-      },
-      {
-        "title": "Compassion",
-        "description": "We understand the emotional journey of immigration and provide supportive, caring guidance throughout the process.",
-        "icon": "heart"
-      },
-      {
-        "title": "Innovation",
-        "description": "We continuously improve our services and adopt new technologies to enhance the client experience.",
-        "icon": "lightbulb"
-      },
-      {
-        "title": "Partnership",
-        "description": "We build long-term relationships with our clients, supporting them beyond their initial immigration goals.",
-        "icon": "handshake"
-      }
-    ],
-    "expertTeam": [
-      {
-        "name": "Maria Rodriguez",
-        "position": "Founder & CEO",
-        "description": "Regulated Canadian Immigration Consultant (RCIC) with over 15 years of experience. Specializes in Express Entry and Provincial Nominee Programs.",
-        "labels": [
-          {
-            "color": "#dd1d1d",
-            "label": "RCCIC Member"
-          }
+    "services": {
+        "mainTitle": "Our Services",
+        "subTitle": "Comprehensive immigration solutions tailored to your unique needs and goals",
+        "services": [
+            {
+                "title": "Immigration Services",
+                "description": "Expert guidance for permanent residence and family sponsorship",
+                "infoPoints": [
+                    "Permanent Residence Applications",
+                    "Family Sponsorship Programs",
+                    "Express Entry Processing",
+                    "Provincial Nominee Programs"
+                ],
+                "price": "2500",
+                "icon": "earth"
+            },
+            {
+                "title": "Work Permit Services",
+                "description": "Professional assistance for work authorization",
+                "infoPoints": [
+                    "Temporary Work Permits",
+                    "LMIA Applications",
+                    "Intra-Company Transfers",
+                    "Startup Visa Programs"
+                ],
+                "price": "2200",
+                "icon": "briefcase"
+            },
+            {
+                "title": "Study Abroad Services",
+                "description": "Complete support for international education opportunities",
+                "infoPoints": [
+                    "Student Visa Applications",
+                    "University Admission Guidance",
+                    "Scholarship Applications",
+                    "Post-Graduation Work Permits"
+                ],
+                "price": "1800",
+                "icon": "graduation-cap"
+            },
+            {
+                "title": "Other Services",
+                "description": "Additional visa and immigration support",
+                "infoPoints": [
+                    "Visitor Visa Applications",
+                    "Citizenship Applications",
+                    "Document Preparation",
+                    "Free Initial Consultation"
+                ],
+                "price": "1500",
+                "icon": "plane"
+            }
+        ],
+        "process": [
+            {
+                "title": "Consultation",
+                "description": "Free initial assessment of your case review",
+                "icon": "messages-square"
+            },
+            {
+                "title": "Documentation",
+                "description": "Complete document preparation and",
+                "icon": "file-text"
+            },
+            {
+                "title": "Submission",
+                "description": "Professional application submission",
+                "icon": "send"
+            },
+            {
+                "title": "Follow-up",
+                "description": "Ongoing support and updates",
+                "icon": "check-circle-2"
+            }
         ]
-      },
-      {
-        "name": "David Chen",
-        "position": "Senior Immigration Consultant",
-        "description": "Expert in student visa applications and study permit renewals. Holds advanced certifications in education consulting and immigration law.",
-        "labels": [
-          {
-            "color": "#dd1d1d",
-            "label": "Extension Specialist"
-          }
+    },
+    "testimonials": {
+        "numerics": [
+            {
+                "label": "Happy Clients",
+                "count": 500,
+                "status": "+"
+            },
+            {
+                "label": "Success Rate",
+                "count": 98,
+                "status": "%"
+            },
+            {
+                "label": "Countries",
+                "count": 50,
+                "status": "+"
+            },
+            {
+                "label": "Years Experience",
+                "count": 15,
+                "status": "+"
+            }
+        ],
+        "clientReview": [
+            {
+                "name": "Priya Sharma",
+                "position": "Software Engineer",
+                "rating": "5",
+                "description": "VSP Visa Consultant made my dream of moving to Canada a reality. Maria's expertise in Express Entry was exceptional. She guided me through every step, from improving my CRS score to preparing for the application. I received my ITA within 6 months!",
+                "dateTime": "2024-01-01T00:00",
+                "tag": {
+                    "label": "Express Entry - Approved",
+                    "color": "#00a35c"
+                }
+            },
+            {
+                "name": "James Mitchell",
+                "position": "Graduate Student",
+                "rating": "5",
+                "description": "David helped me secure admission to my dream university and navigate the student visa process. The scholarship guidance was invaluable - I received a 50% tuition waiver! The support continued even after I arrived in Canada.",
+                "dateTime": "2023-09-01T00:00",
+                "tag": {
+                    "label": "Student Visa - Approved",
+                    "color": "#00a35c"
+                }
+            },
+            {
+                "name": "Anna & Michael Weber",
+                "position": "Couple - Family Sponsorship",
+                "rating": "5",
+                "description": "We thought family sponsorship would be impossible, but Visa Express proved us wrong. They handled the complex paperwork and helped us reunite with Michael's parents in Canada. Professional, compassionate, and results-driven!",
+                "dateTime": "2024-03-01T00:00",
+                "tag": {
+                    "label": "Family Sponsorship - Approved",
+                    "color": "#00a35c"
+                }
+            }
+        ],
+        "moreClientReview": [
+            {
+                "name": "Roberto Silva",
+                "position": "Business Owner",
+                "rating": "5",
+                "description": "The startup visa program seemed overwhelming until I found VSP Visa Consultant. They connected me with the right investors and helped craft a compelling business plan. My tech startup is now thriving in Toronto!",
+                "dateTime": "2023-11-01T00:00",
+                "tag": {
+                    "label": "Startup Visa - Approved",
+                    "color": "#00a35c"
+                }
+            },
+            {
+                "name": "Emma Thompson",
+                "position": "International Student",
+                "rating": "5",
+                "description": "From study permit to post-graduation work permit, Visa Express was with me every step of the way. They even helped me transition to permanent residence through the Canadian Experience Class. Highly recommended!",
+                "dateTime": "2024-02-01T00:00",
+                "tag": {
+                    "label": "Life Approved",
+                    "color": "#00a35c"
+                }
+            },
+            {
+                "name": "Li Wei Chen",
+                "position": "Healthcare Professional",
+                "rating": "5",
+                "description": "Sarah's expertise in work permits was exactly what I needed. The LMIA process was handled flawlessly, and I'm now working as a registered nurse in Vancouver. The attention to detail was impressive.",
+                "dateTime": "2023-12-01T00:00",
+                "tag": {
+                    "label": "Work Permit - Approved",
+                    "color": "#00a35c"
+                }
+            },
+            {
+                "name": "Alimed Hassan",
+                "position": "Engineer",
+                "rating": "5",
+                "description": "The Provincial Nominee Program seemed complex, but Maria made it simple. She identified the best province for my profile and guided me through Ontario's nomination process. I'm now a permanent resident!",
+                "dateTime": "2024-01-01T00:00",
+                "tag": {
+                    "label": "Life Approved",
+                    "color": "#00a35c"
+                }
+            }
+        ],
+        "videos": [
+            {
+                "title": "Priya's Express Entry Success",
+                "duration": "3:45",
+                "subTitle": "From India to Canada: A Software Engineer's Journey",
+                "description": "Priya shares how VSP Visa Consultant helped her navigate the Express Entry process and achieve her Canadian dream.",
+                "url": "#"
+            },
+            {
+                "title": "Family Reunion Success",
+                "duration": "4:12",
+                "subTitle": "Bringing Parents to Canada",
+                "description": "The Weber family explains how family sponsorship helped them reunite with elderly parents in Canada.",
+                "url": "#"
+            },
+            {
+                "title": "Student to Resident",
+                "duration": "5:23",
+                "subTitle": "From Student Visa to Permanent Residence",
+                "description": "Emma's complete journey from international student to Canadian permanent resident with continuous support.",
+                "url": "#"
+            }
+        ],
+        "reviewByService": [
+            {
+                "title": "Immigration",
+                "rating": "4.9",
+                "review": "Outstanding service for Express Entry applications. Professional and thorough.",
+                "name": "Sarah K.",
+                "icon": "earth"
+            },
+            {
+                "title": "Study Abroad",
+                "rating": "4.8",
+                "review": "Helped me get into my dream university with a scholarship. Amazing support!",
+                "name": "Mike R.",
+                "icon": "graduation-cap"
+            },
+            {
+                "title": "Work Permits",
+                "rating": "4.9",
+                "review": "LMIA process was handled perfectly. Now working in my dream job in Canada.",
+                "name": "Chen L.",
+                "icon": "briefcase-business"
+            },
+            {
+                "title": "Family Sponsorship",
+                "rating": "4.9",
+                "review": "Reunited with my family thanks to their expert guidance. Highly emotional and professional service.",
+                "name": "Ana M.",
+                "icon": "users"
+            }
         ]
-      },
-      {
-        "name": "Sarah Johnson",
-        "position": "Work Permit Specialist",
-        "description": "Focuses on LMM applications, work permits, and employer compliance. Former government immigration officer with insider knowledge.",
-        "labels": [
-          {
-            "color": "#dd1d1d",
-            "label": "Cx Government"
-          }
-        ]
-      }
-    ],
-    "awards": [
-      {
-        "title": "Best Immigration Consultant",
-        "description": "2023 - Immigration Excellence Awards"
-      },
-      {
-        "title": "Client Choice Award",
-        "description": "2022 - National Business Awards"
-      },
-      {
-        "title": "Outstanding Service",
-        "description": "2021 - Professional Services Council"
-      },
-      {
-        "title": "Certified Excellence",
-        "description": "2020 - Immigration Consultants Association"
-      }
-    ]
-  },
-  "services": {
-    "mainTitle": "Our Services",
-    "subTitle": "Comprehensive immigration solutions tailored to your unique needs and goals",
-    "services": [
-      {
-        "title": "Immigration Services",
-        "description": "Expert guidance for permanent residence and family sponsorship",
-        "infoPoints": [
-          "Permanent Residence Applications",
-          "Family Sponsorship Programs",
-          "Express Entry Processing",
-          "Provincial Nominee Programs"
-        ],
-        "price": "2500",
-        "icon": "earth"
-      },
-      {
-        "title": "Work Permit Services",
-        "description": "Professional assistance for work authorization",
-        "infoPoints": [
-          "Temporary Work Permits",
-          "LMIA Applications",
-          "Intra-Company Transfers",
-          "Startup Visa Programs"
-        ],
-        "price": "2200",
-        "icon": "briefcase"
-      },
-      {
-        "title": "Study Abroad Services",
-        "description": "Complete support for international education opportunities",
-        "infoPoints": [
-          "Student Visa Applications",
-          "University Admission Guidance",
-          "Scholarship Applications",
-          "Post-Graduation Work Permits"
-        ],
-        "price": "1800",
-        "icon": "graduation-cap"
-      },
-      {
-        "title": "Other Services",
-        "description": "Additional visa and immigration support",
-        "infoPoints": [
-          "Visitor Visa Applications",
-          "Citizenship Applications",
-          "Document Preparation",
-          "Free Initial Consultation"
-        ],
-        "price": "1500",
-        "icon": "plane"
-      }
-    ],
-    "process": [
-      {
-        "title": "Consultation",
-        "description": "Free initial assessment of your case review",
-        "icon": "messages-square"
-      },
-      {
-        "title": "Documentation",
-        "description": "Complete document preparation and",
-        "icon": "file-text"
-      },
-      {
-        "title": "Submission",
-        "description": "Professional application submission",
-        "icon": "send"
-      },
-      {
-        "title": "Follow-up",
-        "description": "Ongoing support and updates",
-        "icon": "check-circle-2"
-      }
-    ]
-  },
-  "testimonials": {
-    "numerics": [
-      {
-        "label": "Happy Clients",
-        "count": 500,
-        "status": "+"
-      },
-      {
-        "label": "Success Rate",
-        "count": 98,
-        "status": "%"
-      },
-      {
-        "label": "Countries",
-        "count": 50,
-        "status": "+"
-      },
-      {
-        "label": "Years Experience",
-        "count": 15,
-        "status": "+"
-      }
-    ],
-    "clientReview": [
-      {
-        "name": "Priya Sharma",
-        "position": "Software Engineer",
-        "rating": "5",
-        "description": "VSP Visa Consultant made my dream of moving to Canada a reality. Maria's expertise in Express Entry was exceptional. She guided me through every step, from improving my CRS score to preparing for the application. I received my ITA within 6 months!",
-        "dateTime": "2024-01-01T00:00",
-        "tag": {
-          "label": "Express Entry - Approved",
-          "color": "#00a35c"
-        }
-      },
-      {
-        "name": "James Mitchell",
-        "position": "Graduate Student",
-        "rating": "5",
-        "description": "David helped me secure admission to my dream university and navigate the student visa process. The scholarship guidance was invaluable - I received a 50% tuition waiver! The support continued even after I arrived in Canada.",
-        "dateTime": "2023-09-01T00:00",
-        "tag": {
-          "label": "Student Visa - Approved",
-          "color": "#00a35c"
-        }
-      },
-      {
-        "name": "Anna & Michael Weber",
-        "position": "Couple - Family Sponsorship",
-        "rating": "5",
-        "description": "We thought family sponsorship would be impossible, but Visa Express proved us wrong. They handled the complex paperwork and helped us reunite with Michael's parents in Canada. Professional, compassionate, and results-driven!",
-        "dateTime": "2024-03-01T00:00",
-        "tag": {
-          "label": "Family Sponsorship - Approved",
-          "color": "#00a35c"
-        }
-      }
-    ],
-    "moreClientReview": [
-      {
-        "name": "Roberto Silva",
-        "position": "Business Owner",
-        "rating": "5",
-        "description": "The startup visa program seemed overwhelming until I found VSP Visa Consultant. They connected me with the right investors and helped craft a compelling business plan. My tech startup is now thriving in Toronto!",
-        "dateTime": "2023-11-01T00:00",
-        "tag": {
-          "label": "Startup Visa - Approved",
-          "color": "#00a35c"
-        }
-      },
-      {
-        "name": "Emma Thompson",
-        "position": "International Student",
-        "rating": "5",
-        "description": "From study permit to post-graduation work permit, Visa Express was with me every step of the way. They even helped me transition to permanent residence through the Canadian Experience Class. Highly recommended!",
-        "dateTime": "2024-02-01T00:00",
-        "tag": {
-          "label": "Life Approved",
-          "color": "#00a35c"
-        }
-      },
-      {
-        "name": "Li Wei Chen",
-        "position": "Healthcare Professional",
-        "rating": "5",
-        "description": "Sarah's expertise in work permits was exactly what I needed. The LMIA process was handled flawlessly, and I'm now working as a registered nurse in Vancouver. The attention to detail was impressive.",
-        "dateTime": "2023-12-01T00:00",
-        "tag": {
-          "label": "Work Permit - Approved",
-          "color": "#00a35c"
-        }
-      },
-      {
-        "name": "Alimed Hassan",
-        "position": "Engineer",
-        "rating": "5",
-        "description": "The Provincial Nominee Program seemed complex, but Maria made it simple. She identified the best province for my profile and guided me through Ontario's nomination process. I'm now a permanent resident!",
-        "dateTime": "2024-01-01T00:00",
-        "tag": {
-          "label": "Life Approved",
-          "color": "#00a35c"
-        }
-      }
-    ],
-    "videos": [
-      {
-        "title": "Priya's Express Entry Success",
-        "duration": "3:45",
-        "subTitle": "From India to Canada: A Software Engineer's Journey",
-        "description": "Priya shares how VSP Visa Consultant helped her navigate the Express Entry process and achieve her Canadian dream.",
-        "url": "#"
-      },
-      {
-        "title": "Family Reunion Success",
-        "duration": "4:12",
-        "subTitle": "Bringing Parents to Canada",
-        "description": "The Weber family explains how family sponsorship helped them reunite with elderly parents in Canada.",
-        "url": "#"
-      },
-      {
-        "title": "Student to Resident",
-        "duration": "5:23",
-        "subTitle": "From Student Visa to Permanent Residence",
-        "description": "Emma's complete journey from international student to Canadian permanent resident with continuous support.",
-        "url": "#"
-      }
-    ],
-    "reviewByService": [
-      {
-        "title": "Immigration",
-        "rating": "4.9",
-        "review": "Outstanding service for Express Entry applications. Professional and thorough.",
-        "name": "Sarah K.",
-        "icon": "earth"
-      },
-      {
-        "title": "Study Abroad",
-        "rating": "4.8",
-        "review": "Helped me get into my dream university with a scholarship. Amazing support!",
-        "name": "Mike R.",
-        "icon": "graduation-cap"
-      },
-      {
-        "title": "Work Permits",
-        "rating": "4.9",
-        "review": "LMIA process was handled perfectly. Now working in my dream job in Canada.",
-        "name": "Chen L.",
-        "icon": "briefcase-business"
-      },
-      {
-        "title": "Family Sponsorship",
-        "rating": "4.9",
-        "review": "Reunited with my family thanks to their expert guidance. Highly emotional and professional service.",
-        "name": "Ana M.",
-        "icon": "users"
-      }
-    ]
-  },
-  "blog": {},
-  "contact": {
-    "officeAddress": "F4, Radha Kirtan Complex, B/h. Architect Collage, ISKON - Raghuvir Road, Vallabh Vidhyanagar - 388120, Anand (Guj.)",
-    "phoneNumber": "90990 08938-97254 30242",
-    "emailAddress": "info@vspvisa.com",
-    "BusinessHours": "Mon-Fri: 9AM-6PM"
-  }
+    },
+    "blog": {},
+    "contact": {
+        "officeAddress": "F4, Radha Kirtan Complex, B/h. Architect Collage, ISKON - Raghuvir Road, Vallabh Vidhyanagar - 388120, Anand (Guj.)",
+        "phoneNumber": "90990 08938-97254 30242",
+        "emailAddress": "info@vspvisa.com",
+        "BusinessHours": "Mon-Fri: 9AM-6PM"
+    }
 }
