@@ -5,12 +5,13 @@ import Footer from "./Footer";
 import { useGetInitialDataQuery } from "../store/apiSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { initialSiteData } from "../store/jsonSlice";
+import StaticJson from "../utils/data.json";
 
 const Layout = () => {
   const dispatch = useDispatch();
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const { data: initialJson } = useGetInitialDataQuery();
+  const { data: initialJson, error } = useGetInitialDataQuery();
   console.log({ initialJson });
   useEffect(() => {
     if (initialJson) {
@@ -25,6 +26,12 @@ const Layout = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (error) {
+      dispatch(initialSiteData(StaticJson));
+    }
+  }, [error]);
 
   return (
     <div className="layout">

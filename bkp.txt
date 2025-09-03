@@ -33,7 +33,7 @@
         {
           "title": "Immigration",
           "description": "Permanent residence, family sponsorship, and express entry programs",
-          "icon": "earth"
+          "icon": "alarm-clock-plus"
         },
         {
           "title": "Study Abroad",
@@ -127,27 +127,33 @@
     "coreValues": [
       {
         "title": "Integrity",
-        "description": "We maintain the highest ethical standards in all our interactions and never compromise on honesty and transparency."
+        "description": "We maintain the highest ethical standards in all our interactions and never compromise on honesty and transparency.",
+        "icon": "shield-half"
       },
       {
         "title": "Excellence",
-        "description": "We strive for perfection in every application, staying updated with the latest immigration laws and procedures."
+        "description": "We strive for perfection in every application, staying updated with the latest immigration laws and procedures.",
+        "icon": "graduation-cap"
       },
       {
         "title": "Diversity",
-        "description": "We celebrate cultural diversity and believe in creating inclusive opportunities for people from all backgrounds.\n"
+        "description": "We celebrate cultural diversity and believe in creating inclusive opportunities for people from all backgrounds.\n",
+        "icon": "users"
       },
       {
         "title": "Compassion",
-        "description": "We understand the emotional journey of immigration and provide supportive, caring guidance throughout the process."
+        "description": "We understand the emotional journey of immigration and provide supportive, caring guidance throughout the process.",
+        "icon": "heart"
       },
       {
         "title": "Innovation",
-        "description": "We continuously improve our services and adopt new technologies to enhance the client experience."
+        "description": "We continuously improve our services and adopt new technologies to enhance the client experience.",
+        "icon": "lightbulb"
       },
       {
         "title": "Partnership",
-        "description": "We build long-term relationships with our clients, supporting them beyond their initial immigration goals."
+        "description": "We build long-term relationships with our clients, supporting them beyond their initial immigration goals.",
+        "icon": "handshake"
       }
     ],
     "expertTeam": [
@@ -205,8 +211,8 @@
     ]
   },
   "services": {
-    "mainTitle": "sfgsdfg",
-    "subTitle": "fgsdfg",
+    "mainTitle": "Our Services",
+    "subTitle": "Comprehensive immigration solutions tailored to your unique needs and goals",
     "services": [
       {
         "title": "Immigration Services",
@@ -217,7 +223,8 @@
           "Express Entry Processing",
           "Provincial Nominee Programs"
         ],
-        "price": "2500"
+        "price": "2500",
+        "icon": "earth"
       },
       {
         "title": "Work Permit Services",
@@ -228,7 +235,8 @@
           "Intra-Company Transfers",
           "Startup Visa Programs"
         ],
-        "price": "2200"
+        "price": "2200",
+        "icon": "briefcase"
       },
       {
         "title": "Study Abroad Services",
@@ -239,7 +247,8 @@
           "Scholarship Applications",
           "Post-Graduation Work Permits"
         ],
-        "price": "1800"
+        "price": "1800",
+        "icon": "graduation-cap"
       },
       {
         "title": "Other Services",
@@ -250,25 +259,30 @@
           "Document Preparation",
           "Free Initial Consultation"
         ],
-        "price": "1500"
+        "price": "1500",
+        "icon": "plane"
       }
     ],
     "process": [
       {
         "title": "Consultation",
-        "description": "Free initial assessment of your case review"
+        "description": "Free initial assessment of your case review",
+        "icon": "messages-square"
       },
       {
         "title": "Documentation",
-        "description": "Complete document preparation and"
+        "description": "Complete document preparation and",
+        "icon": "file-text"
       },
       {
         "title": "Submission",
-        "description": "Professional application submission"
+        "description": "Professional application submission",
+        "icon": "send"
       },
       {
         "title": "Follow-up",
-        "description": "Ongoing support and updates"
+        "description": "Ongoing support and updates",
+        "icon": "check-circle-2"
       }
     ]
   },
@@ -382,21 +396,21 @@
         "duration": "3:45",
         "subTitle": "From India to Canada: A Software Engineer's Journey",
         "description": "Priya shares how VSP Visa Consultant helped her navigate the Express Entry process and achieve her Canadian dream.",
-        "url": ""
+        "url": "#"
       },
       {
         "title": "Family Reunion Success",
         "duration": "4:12",
         "subTitle": "Bringing Parents to Canada",
         "description": "The Weber family explains how family sponsorship helped them reunite with elderly parents in Canada.",
-        "url": ""
+        "url": "#"
       },
       {
         "title": "Student to Resident",
         "duration": "5:23",
         "subTitle": "From Student Visa to Permanent Residence",
         "description": "Emma's complete journey from international student to Canadian permanent resident with continuous support.",
-        "url": ""
+        "url": "#"
       }
     ],
     "reviewByService": [
@@ -404,25 +418,29 @@
         "title": "Immigration",
         "rating": "4.9",
         "review": "Outstanding service for Express Entry applications. Professional and thorough.",
-        "name": "Sarah K."
+        "name": "Sarah K.",
+        "icon": "earth"
       },
       {
         "title": "Study Abroad",
         "rating": "4.8",
         "review": "Helped me get into my dream university with a scholarship. Amazing support!",
-        "name": "Mike R."
+        "name": "Mike R.",
+        "icon": "graduation-cap"
       },
       {
         "title": "Work Permits",
         "rating": "4.9",
         "review": "LMIA process was handled perfectly. Now working in my dream job in Canada.",
-        "name": "Chen L."
+        "name": "Chen L.",
+        "icon": "briefcase-business"
       },
       {
         "title": "Family Sponsorship",
         "rating": "4.9",
         "review": "Reunited with my family thanks to their expert guidance. Highly emotional and professional service.",
-        "name": "Ana M."
+        "name": "Ana M.",
+        "icon": "users"
       }
     ]
   },

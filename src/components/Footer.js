@@ -1,7 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const siteData = useSelector((state) => state.json.siteData.contact);
+
   return (
     <footer className="bg-dark text-white py-5">
       <div className="container">
@@ -108,39 +111,45 @@ const Footer = () => {
             <h6 className="fw-bold mb-3">Contact Info</h6>
             <div className="contact-info">
               <p>
-                <i className="fas fa-map-marker-alt me-2"></i>F4, Radha Kirtan
-                Complax, B/h. Architect Collage, ISKON - Raghuvir Road, Vallabh
-                Vidhyanagar - 388120, Anand (Guj.)
+                <i className="fas fa-map-marker-alt me-2"></i>
+                {siteData?.officeAddress}
               </p>
               <p>
                 <i className="fas fa-phone me-2"></i>
                 <a
-                  href="tel:+919099008938"
                   className="text-decoration-none text-primary"
+                  href={`tel:+91${siteData?.phoneNumber
+                    ?.split("-")?.[0]
+                    ?.split(" ")
+                    .join()}`}
                 >
-                  90990 08938
-                </a>
-                -
+                  {siteData?.phoneNumber?.split("-")?.[0]}
+                </a>{" "}
+                -{" "}
                 <a
-                  href="tel:+919725430242"
                   className="text-decoration-none text-primary"
+                  href={`tel:+91${siteData?.phoneNumber
+                    ?.split("-")?.[1]
+                    ?.split(" ")
+                    .join()}`}
                 >
-                  97254 30242
+                  {siteData?.phoneNumber?.split("-")?.[1]}
                 </a>
               </p>
               <p>
                 <i className="fas fa-envelope me-2"></i>
                 <a
                   className="text-decoration-none text-primary"
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@vspvisa.com"
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${siteData?.emailAddress}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  info@vspvisa.com
+                  {siteData?.emailAddress}
                 </a>
               </p>
               <p>
-                <i className="fas fa-clock me-2"></i>Mon-Fri: 9AM-6PM
+                <i className="fas fa-clock me-2"></i>
+                {siteData?.BusinessHours}
               </p>
             </div>
           </div>

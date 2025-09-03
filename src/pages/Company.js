@@ -1,7 +1,16 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useSelector } from "react-redux";
+import { DynamicIcon } from "lucide-react/dynamic";
 const Company = () => {
+  const siteData = useSelector((state) => state.json.siteData.company);
+
+  const awards = siteData?.awards;
+  const companyHistory = siteData?.companyHistory;
+  const coreValues = siteData?.coreValues;
+  const expertTeam = siteData?.expertTeam;
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -82,7 +91,8 @@ const Company = () => {
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
     };
-  }, []);
+  }, [siteData]);
+
   return (
     <>
       <section className="banner-section">
@@ -98,11 +108,9 @@ const Company = () => {
             <div className="row justify-content-center text-center">
               <div className="col-lg-8">
                 <h1 className="display-4 fw-bold text-white mb-4">
-                  About VSP Visa Consultant
+                  {siteData?.mainTitle}
                 </h1>
-                <p className="lead text-white mb-4">
-                  Dedicated to excellence in immigration services since 2008
-                </p>
+                <p className="lead text-white mb-4">{siteData?.subTitle}</p>
               </div>
             </div>
           </div>
@@ -114,56 +122,25 @@ const Company = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 story-item">
-                <h2 className="section-title">Our Story</h2>
-                <p className="lead">
-                  Founded in 2008, VSP Visa Consultant Consultants began with a
-                  simple mission: to make immigration accessible, transparent,
-                  and successful for everyone.
-                </p>
-                <p>
-                  What started as a small consulting firm has grown into one of
-                  the most trusted immigration service providers, helping
-                  thousands of individuals and families achieve their dreams of
-                  living, working, and studying abroad.
-                </p>
-                <p>
-                  Our founder, Maria Rodriguez, immigrated to Canada herself and
-                  understood firsthand the challenges faced by newcomers. This
-                  personal experience drives our commitment to providing
-                  compassionate, expert guidance at every step of the
-                  immigration journey.
-                </p>
+                <h2 className="section-title">
+                  {siteData?.ourStory?.mainTitle}
+                </h2>
+                <p className="lead">{siteData?.ourStory?.subTitle}</p>
+                <p>{siteData?.storyPara}</p>
               </div>
               <div className="col-lg-6 story-item">
                 <div className="timeline">
-                  <div className="timeline-item">
-                    <div className="timeline-year">2008</div>
-                    <div className="timeline-content">
-                      <h6>Company Founded</h6>
-                      <p>Started with a vision to simplify immigration</p>
-                    </div>
-                  </div>
-                  <div className="timeline-item">
-                    <div className="timeline-year">2012</div>
-                    <div className="timeline-content">
-                      <h6>1000+ Successful Cases</h6>
-                      <p>Reached our first major milestone</p>
-                    </div>
-                  </div>
-                  <div className="timeline-item">
-                    <div className="timeline-year">2018</div>
-                    <div className="timeline-content">
-                      <h6>International Recognition</h6>
-                      <p>Awarded Best Immigration Consultant</p>
-                    </div>
-                  </div>
-                  <div className="timeline-item">
-                    <div className="timeline-year">2025</div>
-                    <div className="timeline-content">
-                      <h6>5000+ Happy Clients</h6>
-                      <p>Continuing to grow and serve</p>
-                    </div>
-                  </div>
+                  {companyHistory?.map((item) => {
+                    return (
+                      <div key={item?.title} className="timeline-item">
+                        <div className="timeline-year">{item.year}</div>
+                        <div className="timeline-content">
+                          <h6>{item.title}</h6>
+                          <p>{item.description}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -214,84 +191,34 @@ const Company = () => {
             </div>
 
             <div className="row g-4 fade-from-bottom">
-              <div className="col-md-6 col-lg-4">
-                <div className="value-card">
-                  <div className="value-icon">
-                    <i className="fas fa-shield-alt"></i>
+              {coreValues?.map((item) => {
+                return (
+                  <div className="col-md-6 col-lg-4" key={item?.title}>
+                    <div className="value-card">
+                      <div className="value-icon">
+                        <div
+                          class="align-items-center d-flex justify-content-center m-auto service-icon service-icon mb-3"
+                          style={{
+                            background: "#c4373e",
+                            height: "60px",
+                            width: "60px",
+                            borderRadius: "10px",
+                          }}
+                        >
+                          <DynamicIcon
+                            name={item.icon}
+                            color="white"
+                            height={35}
+                            width={35}
+                          />
+                        </div>
+                      </div>
+                      <h5>{item?.title}</h5>
+                      <p>{item.description}</p>
+                    </div>
                   </div>
-                  <h5>Integrity</h5>
-                  <p>
-                    We maintain the highest ethical standards in all our
-                    interactions and never compromise on honesty and
-                    transparency.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="value-card">
-                  <div className="value-icon">
-                    <i className="fas fa-graduation-cap"></i>
-                  </div>
-                  <h5>Excellence</h5>
-                  <p>
-                    We strive for perfection in every application, staying
-                    updated with the latest immigration laws and procedures.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="value-card">
-                  <div className="value-icon">
-                    <i className="fas fa-heart"></i>
-                  </div>
-                  <h5>Compassion</h5>
-                  <p>
-                    We understand the emotional journey of immigration and
-                    provide supportive, caring guidance throughout the process.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="value-card">
-                  <div className="value-icon">
-                    <i className="fas fa-users"></i>
-                  </div>
-                  <h5>Diversity</h5>
-                  <p>
-                    We celebrate cultural diversity and believe in creating
-                    inclusive opportunities for people from all backgrounds.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="value-card">
-                  <div className="value-icon">
-                    <i className="fas fa-lightbulb"></i>
-                  </div>
-                  <h5>Innovation</h5>
-                  <p>
-                    We continuously improve our services and adopt new
-                    technologies to enhance the client experience.
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="value-card">
-                  <div className="value-icon">
-                    <i className="fas fa-handshake"></i>
-                  </div>
-                  <h5>Partnership</h5>
-                  <p>
-                    We build long-term relationships with our clients,
-                    supporting them beyond their initial immigration goals.
-                  </p>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -306,64 +233,30 @@ const Company = () => {
             </div>
 
             <div className="row g-4">
-              <div className="col-md-6 col-lg-4">
-                <div className="team-card">
-                  <div className="team-avatar">
-                    <i className="fas fa-user-circle"></i>
+              {expertTeam?.map((item) => {
+                return (
+                  <div className="col-md-6 col-lg-4" key={item?.name}>
+                    <div className="team-card">
+                      <div className="team-avatar">
+                        <i className="fas fa-user-circle"></i>
+                      </div>
+                      <h5>{item?.name}</h5>
+                      <p className="team-role">{item?.position}</p>
+                      <p>{item?.description}</p>
+                      <div className="team-credentials">
+                        <span
+                          className="badge me-2"
+                          style={{
+                            background: item?.labels?.[0]?.color || "#dd1d1d",
+                          }}
+                        >
+                          {item?.labels?.[0]?.label}
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <h5>Maria Rodriguez</h5>
-                  <p className="team-role">Founder & CEO</p>
-                  <p>
-                    Regulated Canadian Immigration Consultant (RCIC) with over
-                    15 years of experience. Specializes in Express Entry and
-                    Provincial Nominee Programs.
-                  </p>
-                  <div className="team-credentials">
-                    <span className="badge bg-primary me-2">RCIC</span>
-                    <span className="badge bg-secondary">ICCRC Member</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="team-card">
-                  <div className="team-avatar">
-                    <i className="fas fa-user-circle"></i>
-                  </div>
-                  <h5>David Chen</h5>
-                  <p className="team-role">Senior Immigration Consultant</p>
-                  <p>
-                    Expert in student visa applications and study permit
-                    renewals. Holds advanced certifications in education
-                    consulting and immigration law.
-                  </p>
-                  <div className="team-credentials">
-                    <span className="badge bg-primary me-2">RCIC</span>
-                    <span className="badge bg-success">
-                      Education Specialist
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="team-card">
-                  <div className="team-avatar">
-                    <i className="fas fa-user-circle"></i>
-                  </div>
-                  <h5>Sarah Johnson</h5>
-                  <p className="team-role">Work Permit Specialist</p>
-                  <p>
-                    Focuses on LMIA applications, work permits, and employer
-                    compliance. Former government immigration officer with
-                    insider knowledge.
-                  </p>
-                  <div className="team-credentials">
-                    <span className="badge bg-primary me-2">RCIC</span>
-                    <span className="badge bg-warning">Ex-Government</span>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -378,51 +271,19 @@ const Company = () => {
             </div>
 
             <div className="row g-4">
-              <div className="col-md-6 col-lg-3">
-                <div className="award-card text-center">
-                  <div className="award-icon">
-                    <i className="fas fa-trophy"></i>
+              {awards?.map((item) => {
+                return (
+                  <div className="col-md-6 col-lg-3">
+                    <div className="award-card text-center">
+                      <div className="award-icon">
+                        <i className="fas fa-trophy"></i>
+                      </div>
+                      <h6>{item?.title}</h6>
+                      <p className="text-muted">{item?.description}</p>
+                    </div>
                   </div>
-                  <h6>Best Immigration Consultant</h6>
-                  <p className="text-muted">
-                    2023 - Immigration Excellence Awards
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-3">
-                <div className="award-card text-center">
-                  <div className="award-icon">
-                    <i className="fas fa-star"></i>
-                  </div>
-                  <h6>Client Choice Award</h6>
-                  <p className="text-muted">2022 - National Business Awards</p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-3">
-                <div className="award-card text-center">
-                  <div className="award-icon">
-                    <i className="fas fa-medal"></i>
-                  </div>
-                  <h6>Outstanding Service</h6>
-                  <p className="text-muted">
-                    2021 - Professional Services Council
-                  </p>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-3">
-                <div className="award-card text-center">
-                  <div className="award-icon">
-                    <i className="fas fa-certificate"></i>
-                  </div>
-                  <h6>Certified Excellence</h6>
-                  <p className="text-muted">
-                    2020 - Immigration Consultants Association
-                  </p>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </section>

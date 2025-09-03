@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Contact = () => {
+  const siteData = useSelector((state) => state.json.siteData.contact);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -212,10 +215,7 @@ const Contact = () => {
                   </div>
                   <div className="contact-item-details">
                     <h6>Office Address</h6>
-                    <p>
-                      F4, Radha Kirtan Complax, B/h. Architect Collage, ISKON -
-                      Raghuvir Road, Vallabh Vidhyanagar - 388120, Anand (Guj.)
-                    </p>
+                    <p>{siteData?.officeAddress}</p>
                   </div>
                 </div>
 
@@ -226,8 +226,23 @@ const Contact = () => {
                   <div className="contact-item-details">
                     <h6>Phone Numbers</h6>
                     <p>
-                      <a href="tel:+919099008938">90990 08938</a> -
-                      <a href="tel:+919725430242"> 97254 30242</a>
+                      <a
+                        href={`tel:+91${siteData?.phoneNumber
+                          ?.split("-")?.[0]
+                          ?.split(" ")
+                          .join()}`}
+                      >
+                        {siteData?.phoneNumber?.split("-")?.[0]}
+                      </a>{" "}
+                      -{" "}
+                      <a
+                        href={`tel:+91${siteData?.phoneNumber
+                          ?.split("-")?.[1]
+                          ?.split(" ")
+                          .join()}`}
+                      >
+                        {siteData?.phoneNumber?.split("-")?.[1]}
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -239,7 +254,9 @@ const Contact = () => {
                   <div className="contact-item-details">
                     <h6>Email Address</h6>
                     <p>
-                      <a href="mailto:info@vspvisa.com">info@vspvisa.com</a>
+                      <a href={`mailto:${siteData?.emailAddress}`}>
+                        {siteData?.emailAddress}
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -250,7 +267,7 @@ const Contact = () => {
                   </div>
                   <div className="contact-item-details">
                     <h6>Business Hours</h6>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>{siteData?.BusinessHours}</p>
                   </div>
                 </div>
               </div>

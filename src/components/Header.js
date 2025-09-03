@@ -624,7 +624,7 @@ const Header = ({ isScrolled, currentPath }) => {
               </li>
 
               {/* Blog Dropdown */}
-              <li
+              {/* <li
                 className="nav-item dropdown"
                 onMouseEnter={() => handleDropdownHover("blog")}
                 onMouseLeave={handleDropdownLeave}
@@ -719,7 +719,7 @@ const Header = ({ isScrolled, currentPath }) => {
                     </div>
                   </div>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link

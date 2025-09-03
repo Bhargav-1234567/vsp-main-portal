@@ -1384,7 +1384,7 @@ footer .list-unstyled a:hover {
     position: fixed;
     background: white;
     width: 50%;
-    right: 0;
+    right: 12%;
     top: 0;
     height: 100%;
     .navbar-nav {
@@ -1875,6 +1875,25 @@ html {
 }
 
 @media (max-width: 480px) {
+  .home-page {
+    .main-content {
+      margin-top: 3rem;
+    }
+  }
+  .navbar-toggler-icon {
+    height: 1em;
+    width: 1em;
+  }
+  .navbar-brand {
+    margin-left: 10px;
+    width: 180px;
+    height: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
   .slide-content {
     padding: 30px 20px;
   }
@@ -1889,6 +1908,9 @@ html {
 .carousel-container {
   width: 100%;
   height: calc(100vh - 60px);
+}
+.slick-arrow {
+  display: none !important;
 }
 
 .carousel-slide {
