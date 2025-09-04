@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { toast } from "sonner";
+const apiBase = process.env.REACT_APP_API_URL;
 
 const Contact = () => {
   const siteData = useSelector((state) => state.json.siteData.contact);
@@ -88,7 +89,7 @@ const Contact = () => {
       setSubmitting(true);
 
       // Send data to backend
-      const response = await fetch("http://localhost:4000/create-inquiry", {
+      const response = await fetch(`${apiBase}/create-inquiry`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
