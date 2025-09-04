@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+import { toast } from "sonner";
 
 const Contact = () => {
   const siteData = useSelector((state) => state.json.siteData.contact);
+  const [recaptchaLoaded, setRecaptchaLoaded] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -14,6 +17,29 @@ const Contact = () => {
     contactPreference: "email",
   });
 
+  // Load reCAPTCHA script
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${process.env.REACT_APP_RECAPTCHA_SITE_KEY}`;
+    script.async = true;
+    script.defer = true;
+    script.onload = () => {
+      setRecaptchaLoaded(true);
+      console.log("reCAPTCHA loaded");
+    };
+    document.head.appendChild(script);
+
+    return () => {
+      // Clean up
+      const existingScript = document.querySelector(
+        'script[src^="https://www.google.com/recaptcha/api.js"]'
+      );
+      if (existingScript) {
+        document.head.removeChild(existingScript);
+      }
+    };
+  }, []);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -21,10 +47,80 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const executeRecaptcha = async () => {
+    if (!window.grecaptcha || !recaptchaLoaded) {
+      console.error("reCAPTCHA not loaded yet");
+      return null;
+    }
+
+    try {
+      const token = await window.grecaptcha.execute(
+        process.env.REACT_APP_RECAPTCHA_SITE_KEY,
+        { action: "submit" }
+      );
+      return token;
+    } catch (error) {
+      console.error("reCAPTCHA execution failed", error);
+      return null;
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+
+    // Execute reCAPTCHA
+    const token = await executeRecaptcha();
+
+    if (!token) {
+      toast.warning("Please verify you're not a robot");
+      // alert("Please verify you're not a robot");
+      return;
+    }
+
+    // Add token to form data
+    const formDataWithRecaptcha = {
+      ...formData,
+      recaptchaToken: token,
+    };
+
+    try {
+      // Show loading state
+      setSubmitting(true);
+
+      // Send data to backend
+      const response = await fetch("http://localhost:4000/create-inquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formDataWithRecaptcha),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        // Success - show success message and reset form
+        toast.success("Thank you for your inquiry! We will contact you soon.");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+          contactPreference: "email",
+        });
+      } else {
+        // Error from server
+        toast.error(`Error: ${result.error || "Failed to submit inquiry"}`);
+      }
+    } catch (error) {
+      // Network error or other issues
+      console.error("Submission error:", error);
+      toast.error("Failed to submit inquiry. Please try again later.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -77,6 +173,7 @@ const Contact = () => {
                         value={formData.firstName}
                         onChange={handleChange}
                         required
+                        disabled={submitting}
                       />
                     </div>
                     <div className="col-md-6 mb-3">
@@ -91,6 +188,7 @@ const Contact = () => {
                         value={formData.lastName}
                         onChange={handleChange}
                         required
+                        disabled={submitting}
                       />
                     </div>
                   </div>
@@ -108,6 +206,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        disabled={submitting}
                       />
                     </div>
                     <div className="col-md-6 mb-3">
@@ -121,6 +220,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
+                        disabled={submitting}
                       />
                     </div>
                   </div>
@@ -135,6 +235,7 @@ const Contact = () => {
                       name="service"
                       value={formData.service}
                       onChange={handleChange}
+                      disabled={submitting}
                     >
                       <option value="">Select a service</option>
                       <option value="immigration">Immigration Services</option>
@@ -158,6 +259,7 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       placeholder="Please describe your immigration needs..."
+                      disabled={submitting}
                     ></textarea>
                   </div>
 
@@ -175,6 +277,7 @@ const Contact = () => {
                           value="email"
                           checked={formData.contactPreference === "email"}
                           onChange={handleChange}
+                          disabled={submitting}
                         />
                         <label className="form-check-label" htmlFor="emailPref">
                           Email
@@ -189,6 +292,7 @@ const Contact = () => {
                           value="phone"
                           checked={formData.contactPreference === "phone"}
                           onChange={handleChange}
+                          disabled={submitting}
                         />
                         <label className="form-check-label" htmlFor="phonePref">
                           Phone
@@ -197,8 +301,32 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <button type="submit" className="btn btn-primary btn-lg">
-                    Submit Consultation Request
+                  {/* reCAPTCHA v3 - invisible */}
+                  {recaptchaLoaded && (
+                    <div
+                      className="g-recaptcha"
+                      data-sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+                      data-size="invisible"
+                    ></div>
+                  )}
+
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-lg"
+                    disabled={submitting}
+                  >
+                    {submitting ? (
+                      <>
+                        <span
+                          className="spinner-border spinner-border-sm me-2"
+                          role="status"
+                          aria-hidden="true"
+                        ></span>
+                        Submitting...
+                      </>
+                    ) : (
+                      "Submit Consultation Request"
+                    )}
                   </button>
                 </form>
               </div>

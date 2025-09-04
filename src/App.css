@@ -1223,7 +1223,7 @@ body {
 .consultation-form .form-control:focus,
 .consultation-form .form-select:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.2rem rgba(0, 82, 204, 0.25);
+  box-shadow: none;
 }
 
 .contact-preferences {
@@ -1513,7 +1513,7 @@ html {
 .btn:focus,
 .form-control:focus,
 .form-select:focus {
-  box-shadow: 0 0 0 0.2rem rgba(0, 82, 204, 0.25);
+  box-shadow: none;
 }
 
 /* Loading states */

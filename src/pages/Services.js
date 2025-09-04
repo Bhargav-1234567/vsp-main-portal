@@ -91,9 +91,6 @@ const Services = () => {
                         })}
                       </ul>
                       <div className="service-pricing">
-                        <span className="price">
-                          Starting from $ {item?.price}
-                        </span>
                         <a href="/contact" className="btn btn-primary">
                           Get Started
                         </a>
