@@ -85,9 +85,7 @@ const Services = () => {
                       <p className="lead mb-4">{item?.description}</p>
                       <ul className="service-features">
                         {item?.infoPoints?.map((item) => {
-                          return (
-                            <li key={item}>Permanent Residence Applications</li>
-                          );
+                          return <li key={item}>{item}</li>;
                         })}
                       </ul>
                       <div className="service-pricing">
