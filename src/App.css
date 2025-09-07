@@ -1754,12 +1754,16 @@ html {
 }
 
 .home-why-choose-section {
-  height: 75vh;
+  height: 100%;
   background-image: url("https://validthemes.net/site-template/visaco/assets/img/shape/20.png");
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0px !important;
+  }
 }
 
 .service-page-service-section {
