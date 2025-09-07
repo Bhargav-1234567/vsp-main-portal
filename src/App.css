@@ -2017,3 +2017,67 @@ html {
     font-size: 1rem;
   }
 }
+
+.action-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 40px;
+  a {
+    text-decoration: none;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px; /* circle shape */
+    background: transparent; /* light background */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .icon i {
+    font-size: 15px;
+    color: var(--white);
+    transition: color 0.3s ease;
+  }
+
+  /* Hover effects */
+  .icon.facebook:hover {
+    background: #1877f2;
+  }
+  .icon.facebook:hover i {
+    color: #fff;
+  }
+
+  .icon.instagram:hover {
+    background: #e1306c;
+  }
+  .icon.instagram:hover i {
+    color: #fff;
+  }
+
+  .icon.twitter:hover {
+    background: #000;
+  }
+  .icon.twitter:hover i {
+    color: #fff;
+  }
+
+  .icon.whatsapp:hover {
+    background: #25d366;
+  }
+  .icon.whatsapp:hover i {
+    color: #fff;
+  }
+
+  .icon.linkedin:hover {
+    background: #0a66c2;
+  }
+  .icon.linkedin:hover i {
+    color: #fff;
+  }
+}

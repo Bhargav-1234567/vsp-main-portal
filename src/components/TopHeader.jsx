@@ -12,13 +12,6 @@ const TopHeader = () => {
         {/* Left Section */}
         <div className="info-section">
           {/* Address */}
-          <div className="info-item">
-            <MapPin size={16} className="icon" />
-            <span>
-              {siteData?.officeAddress?.split("-")?.[1]} -
-              {siteData?.officeAddress?.split("-")?.[2]}
-            </span>
-          </div>
 
           {/* Phone */}
           <div className="info-item">
@@ -53,17 +46,55 @@ const TopHeader = () => {
           </div>
 
           {/* Business Hours */}
-        </div>
-
-        {/* Right Section */}
-        <div className="action-section">
-          {/* <Link to={"/contact"}>
-            <button className="inquiry-btn">Inquiry Now</button>
-          </Link> */}
           <div className="info-item">
             <Clock size={16} className="icon" />
             <span>{siteData?.BusinessHours}</span>
           </div>
+        </div>
+
+        {/* Right Section */}
+        <div className="action-section">
+          <a
+            href={siteData?.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="icon facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+          <a
+            href={siteData?.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="icon instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </a>
+          <a href={siteData?.twitter} target="_blank" rel="noopener noreferrer">
+            <div class="icon twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </a>
+          <a
+            href={siteData?.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="icon whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </a>
+          <a
+            href={siteData?.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="icon linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </a>
         </div>
       </div>
     </header>
