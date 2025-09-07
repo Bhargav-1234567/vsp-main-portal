@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useSelector } from "react-redux";
 import { DynamicIcon } from "lucide-react/dynamic";
-const Company = () => {
+const Company = ({ showBanner = true }) => {
   const siteData = useSelector((state) => state.json.siteData.company);
 
   const awards = siteData?.awards;
@@ -95,27 +95,29 @@ const Company = () => {
 
   return (
     <>
-      <section className="banner-section">
-        <div className="banner-image">
-          <img
-            src="images/banner-company.svg"
-            alt="About Our Company"
-            className="img-fluid w-100"
-          />
-        </div>
-        <div className="banner-overlay">
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8">
-                <h1 className="display-4 fw-bold text-white mb-4">
-                  {siteData?.mainTitle}
-                </h1>
-                <p className="lead text-white mb-4">{siteData?.subTitle}</p>
+      {showBanner && (
+        <section className="banner-section">
+          <div className="banner-image">
+            <img
+              src="images/banner-company.svg"
+              alt="About Our Company"
+              className="img-fluid w-100"
+            />
+          </div>
+          <div className="banner-overlay">
+            <div className="container">
+              <div className="row justify-content-center text-center">
+                <div className="col-lg-8">
+                  <h1 className="display-4 fw-bold text-white mb-4">
+                    {siteData?.mainTitle}
+                  </h1>
+                  <p className="lead text-white mb-4">{siteData?.subTitle}</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <main className="main-content">
         <section id="about" className="py-5">

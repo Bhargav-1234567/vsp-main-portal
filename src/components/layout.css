@@ -1,0 +1,159 @@
+.top-header {
+  background: #0e1226; /* dark background */
+  color: #fff;
+  font-size: 14px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.content-container {
+  margin: 0 auto;
+  padding: 8px 16px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Contact Info */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon {
+  color: #e63946; /* primary red */
+}
+
+.highlight {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.highlight:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.inquiry-btn {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.inquiry-btn:hover {
+  background: #c72e3a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action-section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.ripple-button {
+  position: relative;
+  overflow: visible;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  transition: all 0.3s ease;
+  outline: none;
+  z-index: 1;
+}
+
+.ripple-button:hover {
+  box-shadow: 0 12px 40px rgba(31, 38, 135, 0.5);
+}
+
+.ripple-button:active {
+  transform: translateY(1px);
+}
+
+/* Outer ripple effect */
+.ripple-outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  z-index: -1;
+}
+
+.ripple-outer-1 {
+  animation: infinite-ripple 3s infinite;
+}
+
+.ripple-outer-2 {
+  animation: infinite-ripple 3s infinite;
+  animation-delay: 5s;
+}
+
+.ripple-outer-3 {
+  animation: infinite-ripple 3s infinite;
+  animation-delay: 7s;
+}
+
+@keyframes infinite-ripple {
+  0% {
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+  }
+  100% {
+    height: 150%;
+    width: 120%;
+    opacity: 0;
+  }
+}
+
+.inquiry-btn-section {
+  position: fixed;
+  top: 93%;
+  z-index: 99;
+  right: 26px;
+}

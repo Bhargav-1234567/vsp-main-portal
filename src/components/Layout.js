@@ -6,6 +6,8 @@ import { useGetInitialDataQuery } from "../store/apiSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { initialSiteData } from "../store/jsonSlice";
 import StaticJson from "../utils/data.json";
+import TopHeader from "./TopHeader";
+import InfinityRippleButton from "./InfinityRippleButton";
 
 const Layout = () => {
   const dispatch = useDispatch();
@@ -35,6 +37,11 @@ const Layout = () => {
 
   return (
     <div className="layout">
+      <TopHeader />
+      <div className="inquiry-btn-section">
+        <InfinityRippleButton />{" "}
+      </div>
+
       <Header isScrolled={isScrolled} currentPath={location.pathname} />
       <main className="main-content">
         <Outlet />

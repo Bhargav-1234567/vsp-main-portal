@@ -1,3 +1,10 @@
+import {
+  ArrowBigRight,
+  ArrowLeft,
+  ArrowLeftRight,
+  ArrowRight,
+  ArrowRightFromLine,
+} from "lucide-react";
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
@@ -44,6 +51,7 @@ const HomeSlider = () => {
               className="slide-background"
               style={{
                 backgroundImage: `url(${apiBase}/images/Slide${index + 1}.png)`,
+                backgroundPosition: "center",
               }}
             >
               <div className="slide-content">
@@ -51,9 +59,10 @@ const HomeSlider = () => {
                 <h1 className="slide-title">{slide.subTitle}</h1>
                 <p className="slide-description">{slide.description}</p>
                 <Link to={"/services"} className="slide-button">
-                  Explore More
+                  <ArrowRight /> Explore More
                 </Link>
               </div>
+              <div className="banner-overlay"></div>
             </div>
           </div>
         ))}

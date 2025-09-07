@@ -5,6 +5,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HomeSlider from "../components/HomeSlider";
 import { useSelector } from "react-redux";
 import { DynamicIcon, iconNames } from "lucide-react/dynamic";
+import Services from "./Services";
+import Company from "./Company";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -139,7 +141,7 @@ const Home = () => {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-5">
+        <section className="py-5 home-why-choose-section">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -180,6 +182,9 @@ const Home = () => {
           </div>
         </section>
 
+        <Services showBanner={false} />
+
+        <Company showBanner={false} />
         {/* CTA Section */}
         <section className="py-5 bg-primary text-white">
           <div className="container text-center">

@@ -358,106 +358,6 @@ const Header = ({ isScrolled, currentPath }) => {
                   Home
                 </Link>
               </li>
-
-              {/* Company Dropdown */}
-              <li
-                className="nav-item dropdown"
-                onMouseEnter={() => handleDropdownHover("company")}
-                onMouseLeave={handleDropdownLeave}
-              >
-                <Link
-                  className={`nav-link ${isActive("/company") ? "active" : ""}`}
-                  to="/company"
-                  onClick={handleLinkClick}
-                  aria-expanded={activeDropdown === "company"}
-                >
-                  Company
-                </Link>
-
-                <ul
-                  className={`dropdown-menu mega-dropdown ${
-                    activeDropdown === "company" ? "show" : ""
-                  }`}
-                >
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-md-4">
-                        <h6 className="dropdown-header">About Us</h6>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#about"
-                          onClick={handleLinkClick}
-                        >
-                          Our Story
-                        </Link>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#mission"
-                          onClick={handleLinkClick}
-                        >
-                          Mission & Vision
-                        </Link>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#values"
-                          onClick={handleLinkClick}
-                        >
-                          Our Values
-                        </Link>
-                      </div>
-                      <div className="col-md-4">
-                        <h6 className="dropdown-header">Team</h6>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#team"
-                          onClick={handleLinkClick}
-                        >
-                          Our Experts
-                        </Link>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#advisors"
-                          onClick={handleLinkClick}
-                        >
-                          Advisory Board
-                        </Link>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#careers"
-                          onClick={handleLinkClick}
-                        >
-                          Careers
-                        </Link>
-                      </div>
-                      <div className="col-md-4">
-                        <h6 className="dropdown-header">Recognition</h6>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#awards"
-                          onClick={handleLinkClick}
-                        >
-                          Awards
-                        </Link>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#certifications"
-                          onClick={handleLinkClick}
-                        >
-                          Certifications
-                        </Link>
-                        <Link
-                          className="dropdown-item"
-                          to="/company#partnerships"
-                          onClick={handleLinkClick}
-                        >
-                          Partnerships
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </li>
-
               {/* Services Dropdown */}
               <li
                 className="nav-item dropdown"
@@ -604,6 +504,105 @@ const Header = ({ isScrolled, currentPath }) => {
                           onClick={handleLinkClick}
                         >
                           Free Consultation
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              {/* Company Dropdown */}
+              <li
+                className="nav-item dropdown"
+                onMouseEnter={() => handleDropdownHover("company")}
+                onMouseLeave={handleDropdownLeave}
+              >
+                <Link
+                  className={`nav-link ${isActive("/company") ? "active" : ""}`}
+                  to="/company"
+                  onClick={handleLinkClick}
+                  aria-expanded={activeDropdown === "company"}
+                >
+                  Company
+                </Link>
+
+                <ul
+                  className={`dropdown-menu mega-dropdown ${
+                    activeDropdown === "company" ? "show" : ""
+                  }`}
+                >
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-md-4">
+                        <h6 className="dropdown-header">About Us</h6>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#about"
+                          onClick={handleLinkClick}
+                        >
+                          Our Story
+                        </Link>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#mission"
+                          onClick={handleLinkClick}
+                        >
+                          Mission & Vision
+                        </Link>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#values"
+                          onClick={handleLinkClick}
+                        >
+                          Our Values
+                        </Link>
+                      </div>
+                      <div className="col-md-4">
+                        <h6 className="dropdown-header">Team</h6>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#team"
+                          onClick={handleLinkClick}
+                        >
+                          Our Experts
+                        </Link>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#advisors"
+                          onClick={handleLinkClick}
+                        >
+                          Advisory Board
+                        </Link>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#careers"
+                          onClick={handleLinkClick}
+                        >
+                          Careers
+                        </Link>
+                      </div>
+                      <div className="col-md-4">
+                        <h6 className="dropdown-header">Recognition</h6>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#awards"
+                          onClick={handleLinkClick}
+                        >
+                          Awards
+                        </Link>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#certifications"
+                          onClick={handleLinkClick}
+                        >
+                          Certifications
+                        </Link>
+                        <Link
+                          className="dropdown-item"
+                          to="/company#partnerships"
+                          onClick={handleLinkClick}
+                        >
+                          Partnerships
                         </Link>
                       </div>
                     </div>

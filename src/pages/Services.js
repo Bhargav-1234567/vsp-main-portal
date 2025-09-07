@@ -2,7 +2,7 @@ import { DynamicIcon } from "lucide-react/dynamic";
 import React from "react";
 import { useSelector } from "react-redux";
 
-const Services = () => {
+const Services = ({ showBanner = true }) => {
   const siteData = useSelector((state) => state.json.siteData.services);
 
   const process = siteData?.process;
@@ -11,40 +11,42 @@ const Services = () => {
   return (
     <div className="services-page">
       {/* Banner Section */}
-      <section className="banner-section services-banner-section">
-        <div className="banner-image">
-          <img
-            src="/images/banner-services.svg"
-            alt="Visa Consultation Services"
-            className="img-fluid w-100"
-          />
-        </div>
-        <div className="banner-overlay">
-          <div className="container">
-            <div className="row justify-content-center text-center">
-              <div className="col-lg-8">
-                <h1 className="display-4 fw-bold text-white mb-4">
-                  {siteData?.mainTitle}
-                </h1>
-                <p className="lead text-white mb-4">{siteData?.subTitle}</p>
-                <div className="banner-buttons">
-                  <a href="#services" className="btn btn-primary btn-lg me-3">
-                    View Services
-                  </a>
-                  <a href="/contact" className="btn btn-outline-light btn-lg">
-                    Free Consultation
-                  </a>
+      {showBanner && (
+        <section className="banner-section services-banner-section">
+          <div className="banner-image">
+            <img
+              src="/images/banner-services.svg"
+              alt="Visa Consultation Services"
+              className="img-fluid w-100"
+            />
+          </div>
+          <div className="banner-overlay">
+            <div className="container">
+              <div className="row justify-content-center text-center">
+                <div className="col-lg-8">
+                  <h1 className="display-4 fw-bold text-white mb-4">
+                    {siteData?.mainTitle}
+                  </h1>
+                  <p className="lead text-white mb-4">{siteData?.subTitle}</p>
+                  <div className="banner-buttons">
+                    <a href="#services" className="btn btn-primary btn-lg me-3">
+                      View Services
+                    </a>
+                    <a href="/contact" className="btn btn-outline-light btn-lg">
+                      Free Consultation
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Main Content */}
       <main className="main-content">
         {/* Services Overview */}
-        <section id="services" className="py-5">
+        <section id="services" className="py-5 service-page-service-section">
           <div className="container">
             <div className="row text-center mb-5">
               <div className="col-lg-8 mx-auto">
@@ -139,24 +141,26 @@ const Services = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-5 bg-primary text-white">
-          <div className="container text-center">
-            <div className="row justify-content-center">
-              <div className="col-lg-8">
-                <h2 className="mb-4">
-                  Ready to Start Your Immigration Journey?
-                </h2>
-                <p className="lead mb-4">
-                  Get expert guidance and personalized consultation for your
-                  visa application
-                </p>
-                <a href="/contact" className="btn btn-light btn-lg">
-                  Book Free Consultation
-                </a>
+        {showBanner && (
+          <section className="py-5 bg-primary text-white">
+            <div className="container text-center">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <h2 className="mb-4">
+                    Ready to Start Your Immigration Journey?
+                  </h2>
+                  <p className="lead mb-4">
+                    Get expert guidance and personalized consultation for your
+                    visa application
+                  </p>
+                  <a href="/contact" className="btn btn-light btn-lg">
+                    Book Free Consultation
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
       </main>
     </div>
   );
