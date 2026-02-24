@@ -37,12 +37,12 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      <TopHeader />
       <div className="inquiry-btn-section">
         <InfinityRippleButton />{" "}
       </div>
 
       <Header isScrolled={isScrolled} currentPath={location.pathname} />
+      <TopHeader />
       <main className="main-content">
         <Outlet />
       </main>

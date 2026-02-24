@@ -116,7 +116,7 @@ body {
   position: fixed !important;
   width: 100vw;
   left: 0;
-  top: 120px;
+  top: 75px;
   border: none;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow-lg);
@@ -1659,23 +1659,39 @@ html {
 }
 
 .slick-dots {
-  position: absolute;
-  bottom: 50%;
-  right: 4px;
-  width: auto;
-  rotate: 90deg;
-  z-index: 99;
+  position: absolute !important;
+  bottom: 50% !important;
+  right: 4px !important;
+  width: auto !important;
+  rotate: 90deg !important;
+  z-index: 99 !important;
+}
+.offers-section{
+ .slick-dots {
+  position: absolute !important;
+  bottom: -40px !important;
+   width: 100% !important;
+  rotate: 0deg !important;
+  z-index: 99 !important;
+} 
+.slick-dots li button:before {
+  font-size: 10px !important;
+  opacity: 1 !important;
+  border: 1px solid rgb(160, 160, 160) !important;
+  border-radius: 50% !important;
+  color: rgb(151, 151, 151) !important;
+}
 }
 .slick-dots li button:before {
-  font-size: 10px;
-  opacity: 1;
-  border: 1px solid white;
-  border-radius: 50%;
-  color: white;
+  font-size: 10px !important;
+  opacity: 1 !important;
+  border: 1px solid white !important;
+  border-radius: 50% !important;
+  color: white !important;
 }
 .slick-dots li.slick-active button:before {
-  color: var(--primary-color);
-  opacity: 1;
+  color: var(--primary-color) !important;
+  opacity: 1 !important;
 }
 
 .navigation {
@@ -2046,38 +2062,28 @@ html {
   }
 
   /* Hover effects */
-  .icon.facebook:hover {
+  .icon.facebook {
     background: #1877f2;
-  }
-  .icon.facebook:hover i {
     color: #fff;
   }
 
-  .icon.instagram:hover {
+  .icon.instagram {
     background: #e1306c;
-  }
-  .icon.instagram:hover i {
     color: #fff;
   }
 
-  .icon.twitter:hover {
+  .icon.twitter {
     background: #000;
-  }
-  .icon.twitter:hover i {
     color: #fff;
   }
 
-  .icon.whatsapp:hover {
+  .icon.whatsapp {
     background: #25d366;
-  }
-  .icon.whatsapp:hover i {
     color: #fff;
   }
 
-  .icon.linkedin:hover {
+  .icon.linkedin {
     background: #0a66c2;
-  }
-  .icon.linkedin:hover i {
     color: #fff;
   }
 }

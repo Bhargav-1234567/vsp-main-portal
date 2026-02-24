@@ -118,23 +118,10 @@ const Footer = () => {
                 <i className="fas fa-phone me-2"></i>
                 <a
                   className="text-decoration-none text-primary"
-                  href={`tel:+91${siteData?.phoneNumber
-                    ?.split("-")?.[0]
-                    ?.split(" ")
-                    .join()}`}
+                  href={`tel:+91${siteData?.phoneNumber }`}
                 >
-                  {siteData?.phoneNumber?.split("-")?.[0]}
-                </a>{" "}
-                -{" "}
-                <a
-                  className="text-decoration-none text-primary"
-                  href={`tel:+91${siteData?.phoneNumber
-                    ?.split("-")?.[1]
-                    ?.split(" ")
-                    .join()}`}
-                >
-                  {siteData?.phoneNumber?.split("-")?.[1]}
-                </a>
+                  {siteData?.phoneNumber }
+                </a>{" "} 
               </p>
               <p>
                 <i className="fas fa-envelope me-2"></i>

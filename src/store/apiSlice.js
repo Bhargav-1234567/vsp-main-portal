@@ -10,8 +10,15 @@ export const apiSlice = createApi({
     getInitialData: builder.query({
       query: () => "/open-json",
     }),
+    reorderArray: builder.mutation({
+      query: ({ path, fromIndex, toIndex }) => ({
+        url: "/reorder",
+        method: "PUT",
+        body: { path, fromIndex, toIndex },
+      }),
+    }),
   }),
 });
 
 // export hook
-export const { useGetInitialDataQuery } = apiSlice;
+export const { useGetInitialDataQuery, useReorderArrayMutation } = apiSlice;

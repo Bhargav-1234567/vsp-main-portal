@@ -17,24 +17,12 @@ const TopHeader = () => {
           <div className="info-item">
             <Phone size={16} className="icon" />
             <a
-              href={`tel:+91${siteData?.phoneNumber
-                ?.split("-")?.[0]
-                ?.split(" ")
-                .join("")}`}
+              href={`tel:+91${siteData?.phoneNumber}`}
               className="highlight"
             >
-              {siteData?.phoneNumber?.split("-")?.[0]}
+              {siteData?.phoneNumber}
             </a>
-            <span>/</span>
-            <a
-              href={`tel:+91${siteData?.phoneNumber
-                ?.split("-")?.[1]
-                ?.split(" ")
-                .join("")}`}
-              className="highlight"
-            >
-              {siteData?.phoneNumber?.split("-")?.[1]}
-            </a>
+
           </div>
 
           {/* Email */}

@@ -7,11 +7,13 @@ import { useSelector } from "react-redux";
 import { DynamicIcon, iconNames } from "lucide-react/dynamic";
 import Services from "./Services";
 import Company from "./Company";
+import OffersSlider from "../components/OffersSlider";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const siteData = useSelector((state) => state.json.siteData.home);
+    const apiBase = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     // service-card-home animation
@@ -88,12 +90,58 @@ const Home = () => {
   const experties = siteData?.expertise;
   const whyChoose = siteData?.whyChoose;
   const numerics = siteData?.numerics;
-
+ const offers = [
+    {
+      image: `${apiBase}/images/offerSlide1.png`,
+      title: "Student Visa Special",
+      description: "Complete guidance for top universities",
+      discount: "20% OFF",
+      originalPrice: 999,
+      offerPrice: 799,
+      validTill: "Mar 2024"
+    },
+    {
+      image: `${apiBase}/images/offerSlide2.png`,
+      title: "Family Immigration",
+      description: "Sponsor your family with ease",
+      discount: "15% OFF",
+      originalPrice: 1499,
+      offerPrice: 1274,
+      validTill: "Apr 2024"
+    },
+    {
+      image: "/images/offer3.jpg",
+      title: "Work Permit Package",
+      description: "Fast-track work visa processing",
+      discount: "25% OFF",
+      originalPrice: 1299,
+      offerPrice: 974,
+      validTill: "Mar 2024"
+    },
+    {
+      image: "/images/offer4.jpg",
+      title: "PR Application",
+      description: "Complete PR application assistance",
+      discount: "10% OFF",
+      originalPrice: 1999,
+      offerPrice: 1799,
+      validTill: "May 2024"
+    },
+    {
+      image: "/images/offer5.jpg",
+      title: "Tourist Visa",
+      description: "Hassle-free tourist visa processing",
+      discount: "30% OFF",
+      originalPrice: 499,
+      offerPrice: 349,
+      validTill: "Mar 2024"
+    }
+  ];
   return (
     <div className="home-page">
       <HomeSlider />
       {/* Carousel Section */}
-
+<OffersSlider offers={offers}/>
       {/* Main Content */}
       <div className="main-content">
         {/* Services Overview */}
