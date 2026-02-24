@@ -43,8 +43,8 @@ const OffersSlider = ({ offers }) => {
             <div className="container">
                 <div className="row text-center mb-5">
                     <div className="col-lg-8 mx-auto">
-                        <h2 className="section-title" >Special Offers</h2>
-                        <p className="lead ">Exclusive deals to make your immigration journey affordable</p>
+                        <h2 className="section-title" >Special Services</h2>
+                        <p className="lead ">Exclusive Services to make your immigration journey affordable</p>
                     </div>
                 </div>
 
